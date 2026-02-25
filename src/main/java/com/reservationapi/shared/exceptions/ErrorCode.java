@@ -1,0 +1,21 @@
+package com.reservationapi.shared.exceptions;
+
+public enum ErrorCode {
+    NOT_FOUND,
+    FORBIDDEN,
+    CONFLICT,
+    BAD_REQUEST,
+
+    // Domain-specific
+    ROOM_OVERLAP,
+    SLOT_CAPACITY_EXCEEDED,
+    INVALID_STATUS_TRANSITION,
+    RESERVATION_SOFT_DELETED,
+    SLOT_SERVICE_TYPE_MISMATCH,
+    USER_NOT_FOUND,
+    CANNOT_CHANGE_OWN_STATUS,
+    ROOM_NOT_FOUND,
+    ROOM_CODE_ALREADY_EXISTS,
+    INTERNAL_ERROR,
+    UNAUTHORIZED
+}

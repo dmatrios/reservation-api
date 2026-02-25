@@ -1,0 +1,10 @@
+package com.reservationapi.users.infra;
+
+import com.reservationapi.users.domain.User;
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByEmail(String email);
+    boolean existsByRole(com.reservationapi.users.domain.UserRole role);
+}

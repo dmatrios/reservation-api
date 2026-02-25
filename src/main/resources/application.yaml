@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: reservationapi
+
+  # Buena práctica para APIs REST (evita lazy loading en controllers)
+  jpa:
+    open-in-view: false
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    root: INFO
+
+server:
+  port: 8080
